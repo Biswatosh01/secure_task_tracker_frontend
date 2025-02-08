@@ -5,14 +5,14 @@ A responsive, user-friendly frontend for managing tasks, built with **Vue.js**. 
 ---
 
 ## 📚 Table of Contents
-- [Project Overview](#project-overview)
-- [Tech Stack](#tech-stack)
-- [Getting Started](#getting-started)
-- [Environment Variables](#environment-variables)
-- [Run the Frontend Locally](#run-the-frontend-locally)
-- [Deployment](#deployment)
-- [Application Structure](#application-structure)
-- [License](#license)
+- [Project Overview](#-project-overview)
+- [Tech Stack](#%EF%B8%8F-tech-stack)
+- [Getting Started](#-getting-started)
+- [Environment Variables](#%EF%B8%8F-environment-variables)
+- [Run the Frontend Locally](#-run-the-frontend-locally)
+- [Deployment](#-deployment)
+- [Application Structure](#-application-structure)
+- [License](#-license)
 
 ---
 
