@@ -1,6 +1,14 @@
 # 🚀 Fast Secure Task Tracker - Frontend (Vue.js)
 
-A responsive, user-friendly frontend for managing tasks, built with **Vue.js**. This application allows users to register, log in securely using JWT, and manage their tasks with ease.
+A responsive, user-friendly frontend for managing tasks, built with **Vue.js** and connected to a **Nest.js backend** with **MongoDB Atlas**. This application allows users to register, log in securely using JWT, and manage their tasks with ease.
+
+---
+
+## 🚀 **Deployed Frontend URL**
+
+🌐 **[Live Demo on Netlify](https://secure-task-tracker.netlify.app)**  
+
+You can access the application and manage your tasks through this link.
 
 ---
 
@@ -42,8 +50,8 @@ This app interacts with the **NestJS backend** via RESTful APIs.
 ### 1️⃣ Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/frontend-repo.git
-cd frontend-repo
+git clone https://github.com/Biswatosh01/secure_task_tracker_frontend.git
+cd secure_task_tracker_frontend/frontend
 ```
 
 ### 2️⃣ Install Dependencies
@@ -129,11 +137,11 @@ axios.get(`${process.env.VUE_APP_API_URL}/tasks`, {
 });
 ```
 
-## ✅ Final Checklist
-* Vue components are functional (Login, Signup, TaskList, TaskForm).
-* API requests are authenticated using JWT.
-* CORS configured correctly in the backend.
-* Deployment on Netlify completed successfully.
+## 🔐 Key Features
+* ✅ User Authentication (Signup/Login)
+* ✅ Task Management (Add, View, and Delete Tasks)
+* ✅ Secure API Integration with JWT Authentication
+* ✅ Responsive UI Design
 
 ## 📜 License
 This project is licensed under the **MIT License**.
