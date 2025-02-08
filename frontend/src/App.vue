@@ -1,16 +1,17 @@
 <template>
   <div id="app">
-    <router-view />
+    <router-view /> <!-- Placeholder for rendering views -->
   </div>
 </template>
 
 <script>
 export default {
-  name: 'App'
-}
+  name: 'App',
+};
 </script>
 
 <style>
+/* Basic styling for the app */
 body {
   font-family: Arial, sans-serif;
   background-color: #f4f4f9;
@@ -35,7 +36,7 @@ button {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  margin: 5px 5px;
+  margin: 5px;
 }
 
 button:hover {

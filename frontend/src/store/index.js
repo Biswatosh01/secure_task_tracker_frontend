@@ -1,31 +1,32 @@
 import { createStore } from 'vuex';
-import axios from 'axios';
+import api from '../axios';
 
-const store = createStore({
-  state() {
-    return {
-      token: localStorage.getItem('token') || ''
-    };
+export default createStore({
+  state: {
+    token: localStorage.getItem('token') || '', // Store JWT token
+    username: localStorage.getItem('username') || '', // Store username
   },
   mutations: {
-    setToken(state, token) {
+    setToken(state, { token, username }) {
       state.token = token;
-      localStorage.setItem('token', token);
+      state.username = username; // Save username in Vuex store
+      localStorage.setItem('token', token); // Store JWT token
+      localStorage.setItem('username', username); // Store username
     },
     clearToken(state) {
       state.token = '';
-      localStorage.removeItem('token');
-    }
+      state.username = ''; 
+      localStorage.removeItem('token'); // Clear token on logout
+      localStorage.removeItem('username'); // Clear username on logout
+    },
   },
   actions: {
     async login({ commit }, credentials) {
-      const { data } = await axios.post('/api/auth/login', credentials);
-      commit('setToken', data.token);
+      const { data } = await api.post('/auth/login', credentials);
+      commit('setToken', { token: data.token, username: credentials.username }); // Save token and username after successful login
     },
     logout({ commit }) {
-      commit('clearToken');
-    }
-  }
+      commit('clearToken'); // Clear token during logout
+    },
+  },
 });
-
-export default store;

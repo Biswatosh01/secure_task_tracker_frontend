@@ -1,20 +1,22 @@
 import { createRouter, createWebHistory } from 'vue-router';
-import UserLogin from '../views/Login.vue';
-import UserSignup from '../views/Signup.vue';
+import Login from '../views/Login.vue';
+import Signup from '../views/Signup.vue';
 import TaskList from '../views/TaskList.vue';
 import TaskForm from '../views/TaskForm.vue';
 
+// Define routes
 const routes = [
-  { path: '/login', component: UserLogin },
-  { path: '/signup', component: UserSignup },
+  { path: '/', redirect: '/login' },
+  { path: '/login', component: Login },
+  { path: '/signup', component: Signup },
   { path: '/tasks', component: TaskList },
-  { path: '/add-task', component: TaskForm },
-  { path: '/:pathMatch(.*)*', redirect: '/login' } // Handle unknown routes
+  { path: '/add-task', component: TaskForm }
 ];
 
+// Create and export the router
 const router = createRouter({
   history: createWebHistory(),
-  routes
+  routes,
 });
 
 export default router;
