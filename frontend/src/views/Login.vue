@@ -27,7 +27,7 @@ export default {
       }
     },
     goToSignup() {
-      this.$router.push('/signup'); // ✅ Redirects to the signup page
+      this.$router.push('/signup'); // Redirects to the signup page
     },
   },
 };
@@ -35,7 +35,7 @@ export default {
 
 <style scoped>
 button {
-  margin: 5px; /* ✅ Added margin for better spacing */
+  margin: 5px; /* Added margin for better spacing */
 }
 
 button:hover {
